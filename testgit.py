@@ -4,9 +4,10 @@ size= int(input("How large is the square?: "))
 for row in range(size):
     for column in range(size):
         if row == 0 or row == size - 1:
+            print("*", end=(" "))
         
+        elif column == 0 or column == size -1:
             print("*", end=" ")
-        
-        elif column == 0 or column == size:
-            prin("*", end=" ")
+        else:
+            print(" ", end=" ")    
     print()
